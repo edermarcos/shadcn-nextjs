@@ -1,10 +1,16 @@
+import React from 'react'
+
 import { ModeToggle } from '@/components/ModeToggle'
 import { Button } from '@/components/ui/button'
-import React from 'react'
+import Menu from '@/components/Menu'
 
 const HomePage = () => {
   return (
-    <section className='min-h-screen grid place-content-center'>
+    <section className='min-h-screen max-w-max mx-auto'>
+      <div className='bg-red-200'>
+      <Menu />
+      </div>
+
       <section className='border'>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
@@ -12,7 +18,6 @@ const HomePage = () => {
           quam, pariatur dolores veniam laboriosam unde perspiciatis eaque neque
           dolorum maxime, minus harum!
         </p>
-
         <div>
           <Button variant={'default'}>default</Button>
           <Button variant={'destructive'}>destructive</Button>
@@ -21,10 +26,10 @@ const HomePage = () => {
           <Button variant={'link'}>link</Button>
           <Button variant={'secondary'}>secondary</Button>
         </div>
-
         <div>
           <ModeToggle />
         </div>
+        M
       </section>
     </section>
   )
